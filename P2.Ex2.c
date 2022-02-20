@@ -1,26 +1,26 @@
-#include <math.h>
+#include <stdio.h>
 
+int main()
+{
+    double x;//сам х
+    double cos = 1;//общая сумма
+    double down = 1;//знаменатель(факториал)
+    double up = x*x;//числитель (увеличение степени х на 2)
+    int n ; // точность
 
-int main(){
-
-    int n, i=1, k=1;
-    float x;
-    double c;
-
-
-    printf("Enter n\n");
-    scanf("%d",&n);
-    printf("Enter x\n");
-    scanf("%f", &x);
-
-
-    while(i<=n){
-
-        k = k * i;
-        c = c + pow(-1,i) * pow(x,2*i)/2*k;
-        ++i;
+    printf("Enter E: \n");
+    scanf("%d", n);
+    
+    int i;
+    printf("Enter x: ");
+    scanf("%lf", &x);
+    for (i = 1; i < n; i+=1)//сразу с 1 и по 1 в будущем
+    {
+        up *= (-1)*up;//контроль -1 и увеличение степени х
+        down *= (i-1) * i; //факториал
+        cos += up / down; //добавление следующего компонента
     }
+    printf("result: %lf\n", x);
 
-    printf("%lf", c);
     return 0;
 }
