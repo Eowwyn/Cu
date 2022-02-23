@@ -20,7 +20,7 @@ int main(){
              s*=j;
          }
      }   
-     cos+=pow(-1,i)*pow(x,2*i)/s ;   
+     cos+=pow(-1,i)*pow(x,2*i)/s;   
         
     }
     printf("cos(x)=%lf", cos);
