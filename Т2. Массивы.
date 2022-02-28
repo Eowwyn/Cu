@@ -1,0 +1,32 @@
+~ Выделение max or min в массиве 
+1) int max = arr[0];
+2) if (arr[i] > max){
+      max = arr[i];
+   }
+   
+• int N; 
+    printf("Enter N: ");
+    scanf("%d", &N);
+    
+    int arr[N];
+    int max = arr[0];
+
+    for(int i=0;i<N;i++){
+        printf("Enter arr[i]: ");
+        scanf("%d", &arr[i]);
+        
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    }
+    
+    int min = arr[0];
+     for(int i=0;i<N;i++){
+         if(arr[i]<min){
+            min = arr[i];
+        }
+     }
+    printf("Max: %d \n", max);
+    printf("Min: %d", min);
+•   return 0; 
+      
