@@ -13,16 +13,9 @@ int main(){
      scanf("%d", &arr[i]);  
   }
   
-  
-  for(int i=0;i<N/2;i++){
-    arr[i]=arr[N-1];   
-    N--;
+  for(int i=N-1;i>=0;i--){
+    printf("%d", arr[i]);  
   }
   
- 
-  for(int k=0;k<N;k++){
-      printf("%d", arr[k]);
-  }
- 
    return 0;
 }
