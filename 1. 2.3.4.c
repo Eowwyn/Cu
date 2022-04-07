@@ -3,7 +3,7 @@
 #include string.h
 #define N 1024
 
- Schitaem glasnie bukovki
+ //Schitaem glasnie bukovki
 int glasnie_bukovki(char t){
      char glas[] = eEyYuUiIoOaA;
      int L = strlen(glas);
@@ -17,7 +17,7 @@ int glasnie_bukovki(char t){
 }
 
 
- Proverka + print
+ //Proverka + print
 void proverka_printf(char string){
      if (string == NULL) obnulenie pokazatelya
             return;
