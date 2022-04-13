@@ -39,7 +39,7 @@ void proverka_printf(char *string){
                    printf("%c", string[t]);
                }
             }
-            while(ispunct(string[f]) && string[f] == ' '){ //find a start of a new word
+            while(ispunct(string[f]) || string[f] == ' '){ //find a start of a new word
                 ++f;
             }  
             // write znaki prepinaniya from old word to start of new
